@@ -19,7 +19,11 @@ echo "$grey A collection of cute but deadly viruses based on the worst pest disa
  They will instantly snatch control from you. Then will sicken your high-end PC by overflowing the RAM & overwhelming the processor. 
  And you will see your computer groaning till it crashes. Believe me, viruses were never so lovely before.$end"
 echo
-echo "  4) Exit"
+echo "  4) Install Rubber Dockie"
+echo
+echo "$grey USB Machine Stealer$end"
+echo
+echo "  0) Exit"
 echo
 echo -n "Choose one of the above options: "
 read selection
@@ -28,7 +32,8 @@ case $selection in
   1) fluxion ; menu_return;;
   2) discover ; menu_return;;
   3) wannacrybugswarm ; menu_return;;
-  4) exit;;
+  4) rubberdockie ; menu_return;;
+  0) exit;;
   *) exit;;
 esac
 }
@@ -74,6 +79,13 @@ wannacrybugswarm () {
 git clone https://github.com/yonasuriv/wannacry-bugswarm
 echo
 echo $red WannaCry BugSwarm Installed. These tools are extremely dangerous, use them with caution.$end
+echo
+}
+
+rubberdockie () {
+git clone https://github.com/yonasuriv/rubberdockie
+cd rubberdockie/
+open setupmanual
 echo
 }
 
@@ -136,7 +148,7 @@ echo
 
 
 clear
-#loader
-#loader_logo
+loader
+loader_logo
 logo
 menu
