@@ -96,7 +96,7 @@ echo
 
 success () {
 echo
-echo "$cyan Sucessfully installed in  `pwd`  $end"
+echo "$green2 Sucessfully installed in  `pwd`  $end"
 echo
 sleep 2
 }
