@@ -64,12 +64,7 @@ done
 fluxion () {
 git clone https://www.github.com/FluxionNetwork/fluxion.git ~/.fluxion
 cd ~/.fluxion
-echo
-echo "$cyan Sucessfully installed in  `pwd`  $end"
-echo
-sleep 2
-echo Starting...
-sleep 3
+success
 sudo ./fluxion.sh -i
 echo
 }
@@ -77,12 +72,7 @@ echo
 discover () {
 git clone https://github.com/leebaird/discover ~/.discover
 cd ~/.discover
-echo
-echo "$cyan Sucessfully installed in  `pwd`  $end"
-echo
-sleep 2
-echo Starting...
-sleep 3
+success
 sudo ./update.sh
 echo
 }
@@ -90,15 +80,25 @@ echo
 wannacrybugswarm () {
 git clone https://github.com/yonasuriv/wannacry-bugswarm
 echo
-echo $red WannaCry BugSwarm Installed. These tools are extremely dangerous, use them with caution.$end
+success
+echo
+echo $red These tools are extremely dangerous, use them with caution.$end
 echo
 }
 
 rubberdockie () {
 git clone https://github.com/yonasuriv/rubberdockie
 cd rubberdockie/
+success
 open setupmanual
 echo
+}
+
+success () {
+echo
+echo "$cyan Sucessfully installed in  `pwd`  $end"
+echo
+sleep 2
 }
 
 loader_logo () {
