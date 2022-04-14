@@ -62,15 +62,27 @@ done
 }
 
 fluxion () {
-git clone https://www.github.com/FluxionNetwork/fluxion.git
-cd fluxion 
+git clone https://www.github.com/FluxionNetwork/fluxion.git ~/.fluxion
+cd ~/.fluxion
+echo
+echo "$cyan Sucessfully installed in  `pwd`  $end"
+echo
+sleep 2
+echo Starting...
+sleep 3
 sudo ./fluxion.sh -i
 echo
 }
 
 discover () {
-git clone https://github.com/leebaird/discover
-cd discover/
+git clone https://github.com/leebaird/discover ~/.discover
+cd ~/.discover
+echo
+echo "$cyan Sucessfully installed in  `pwd`  $end"
+echo
+sleep 2
+echo Starting...
+sleep 3
 sudo ./update.sh
 echo
 }
