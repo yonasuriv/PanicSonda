@@ -1,8 +1,8 @@
 #!/bin/sh
-. ./shellcss.sh
+. ./.shcss.sh
 
 menu () {
-echo "\033[1;37;40m Menu \033[0m"
+echo "$greybgwhite Menu $end"
 echo
 echo "  1) Install Fluxion"
 echo
