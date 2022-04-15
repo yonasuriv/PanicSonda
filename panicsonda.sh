@@ -4,11 +4,11 @@
 menu () {
 echo "$greybgwhite Menu $end"
 echo
-echo "  1) Install Fluxion"
+echo "  1) Run Fluxion"
 echo
 echo "$grey Security auditing and social-engineering research tool. It is a remake of linset by vk496 with fewer bugs and more functionality.$end"
 echo
-echo "  2) Install Discover"
+echo "  2) Run Discover"
 echo
 echo "$grey Custom bash scripts used to automate various penetration testing tasks,
  including recon, scanning, parsing, and creating malicious payloads and listeners with Metasploit. $end"
@@ -21,9 +21,13 @@ echo "$grey A collection of cute but deadly viruses based on the worst pest disa
 echo
 echo "  4) Install Rubber Dockie"
 echo
-echo "$grey USB Machine Stealer$end"
+echo "$grey USB Machine Stealer.$end"
 echo
 echo "  0) Exit"
+echo
+echo "  $red2 Run$end types data will be saved in your$red2 home$end directory as$red2 hidden$end files."
+echo
+echo "  $red2 Install$end types data will be saved in your $red2 Panic Sonda$end folder in your$red2 home$end directory."
 echo
 echo -n "Choose one of the above options: "
 read selection
@@ -78,7 +82,7 @@ echo
 }
 
 wannacrybugswarm () {
-git clone https://github.com/yonasuriv/wannacry-bugswarm
+git clone https://github.com/yonasuriv/wannacry-bugswarm ~/Panic\ Sonda/
 echo
 success
 echo
@@ -87,7 +91,7 @@ echo
 }
 
 rubberdockie () {
-git clone https://github.com/yonasuriv/rubberdockie
+git clone https://github.com/yonasuriv/rubberdockie ~/Panic\ Sonda/
 cd rubberdockie/
 success
 open setupmanual
@@ -129,12 +133,12 @@ clear
 
 logo () {
 echo """$red
-███████╗██╗  ██╗ █████╗ ██████╗ ██╗  ██╗    ████████╗ █████╗ ███╗   ██╗██╗  ██╗
-██╔════╝██║  ██║██╔══██╗██╔══██╗██║ ██╔╝    ╚══██╔══╝██╔══██╗████╗  ██║██║ ██╔╝
-███████╗███████║███████║██████╔╝█████╔╝        ██║   ███████║██╔██╗ ██║█████╔╝ 
-╚════██║██╔══██║██╔══██║██╔══██╗██╔═██╗        ██║   ██╔══██║██║╚██╗██║██╔═██╗ 
-███████║██║  ██║██║  ██║██║  ██║██║  ██╗       ██║   ██║  ██║██║ ╚████║██║  ██╗
-╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+██████╗  █████╗ ███╗   ██╗██╗ ██████╗    ███████╗ ██████╗ ███╗   ██╗██████╗  █████╗ 
+██╔══██╗██╔══██╗████╗  ██║██║██╔════╝    ██╔════╝██╔═══██╗████╗  ██║██╔══██╗██╔══██╗
+██████╔╝███████║██╔██╗ ██║██║██║         ███████╗██║   ██║██╔██╗ ██║██║  ██║███████║
+██╔═══╝ ██╔══██║██║╚██╗██║██║██║         ╚════██║██║   ██║██║╚██╗██║██║  ██║██╔══██║
+██║     ██║  ██║██║ ╚████║██║╚██████╗    ███████║╚██████╔╝██║ ╚████║██████╔╝██║  ██║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝    ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝
 $end"""
 }
 
