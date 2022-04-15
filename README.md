@@ -1,4 +1,4 @@
-# Shark Tank Penetration Testing Framework
+# Panic Sonda Penetration Testing Framework
 
 **Shell Script uploaded with an Arsenal of tools.**
 
