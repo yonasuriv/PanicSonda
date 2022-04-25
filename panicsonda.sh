@@ -82,7 +82,7 @@ echo
 }
 
 wannacrybugswarm () {
-git clone https://github.com/yonasuriv/wannacry-bugswarm ~/Panic\ Sonda/
+git clone https://github.com/yonasuriv/wannacry-bugswarm ~/Panic\ Sonda/WannaCry\ BugSwarm/
 echo
 success
 echo
@@ -91,8 +91,8 @@ echo
 }
 
 rubberdockie () {
-git clone https://github.com/yonasuriv/rubberdockie ~/Panic\ Sonda/
-cd rubberdockie/
+git clone https://github.com/yonasuriv/rubberdockie ~/Panic\ Sonda/Rubber\ Dockie/
+cd ~/Panic\ Sonda/Rubber\ Dockie/
 success
 open setupmanual
 echo
