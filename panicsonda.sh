@@ -17,11 +17,12 @@ echo "  3) Install WannaCry BugSwarm"
 echo
 echo "$grey A collection of cute but deadly viruses based on the worst pest disasters in history.
  They will instantly snatch control from you. Then will sicken your high-end PC by overflowing the RAM & overwhelming the processor. 
- And you will see your computer groaning till it crashes. Believe me, viruses were never so lovely before.$end"
+ And you will see your computer groaning till it crashes. $end"
 echo
 echo "  4) Install Rubber Dockie"
 echo
-echo "$grey USB Machine Stealer.$end"
+echo "$grey 
+Transform an innocent USB drive into a Machine Stealer: installing backdoors, exfiltrating documents, or capturing credentials.$end"
 echo
 echo "  0) Exit"
 echo
