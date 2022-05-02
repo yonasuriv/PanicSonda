@@ -14,13 +14,13 @@ Custom bash scripts used to automate various penetration testing tasks including
 
 - Kali Tools
   
-### **WannaCry BugSwarm** `new`
+### **WannaCry BugSwarm**
 
  A collection of cute but deadly viruses based on the worst pest disasters in history.
  They will instantly snatch control from you. Then will sicken your high-end PC by overflowing the RAM & overwhelming the processor. 
  And you will see your computer groaning till it crashes.
  
-### **Rubber Dockie** `new`
+### **Rubber Dockie**
 
 Transform an innocent USB drive into a Machine Stealer: installing backdoors, exfiltrating documents, or capturing credentials.
 
