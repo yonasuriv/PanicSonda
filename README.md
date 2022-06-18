@@ -26,4 +26,7 @@ Transform an innocent USB drive into a Machine Stealer: installing backdoors, ex
 - Fluxion **DOES NOT WORK** on Linux Subsystem For Windows 10, because the subsystem doesn't allow access to network interfaces.
 - Working on further updates and projects, please stay tunned.
 
-
+#### Credits
+[Leebaird](https://github.com/leebaird)
+[FluxionNetwork](https://github.com/FluxionNetwork)
+[Yonasuriv](https://github.com/yonasuriv)
