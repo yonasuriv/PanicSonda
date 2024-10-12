@@ -12,7 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden; /* Prevents scrollbars */
+  overflow: hidden;
+  /* Prevents scrollbars */
   width: 100%;
   height: 100%;
 }
@@ -30,10 +31,10 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  
+
 }
 
-.logo img{
+.logo img {
   padding-bottom: 10px;
   padding-left: 10px;
   display: inline-block;
@@ -53,9 +54,9 @@ body {
 }
 
 .search-container {
-text-align: center;
-align-items: center;
-justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar {
@@ -120,189 +121,194 @@ justify-content: center;
 }
 
 .search-bar {
-border: 2px solid var(--red);
-background-color: black;
-width: 830px;
-height: 65px;
-border-radius: 30px;
-display: flex;
-align-items: center;
-padding-left: 15px;
-margin-top: 20px;
+  border: 2px solid var(--red);
+  background-color: black;
+  width: 830px;
+  height: 65px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-top: 20px;
 }
 
 .search-bar:hover {
-background-color: black;
-box-shadow: 3px 3px 30px var(--red);
-border-color: var(--red);
+  background-color: black;
+  box-shadow: 3px 3px 30px var(--red);
+  border-color: var(--red);
 }
 
 .search-bar i {
-font-size: 15px;
-color: var(--red);
-margin-right: 15px;
+  font-size: 15px;
+  color: var(--red);
+  margin-right: 15px;
 }
 
 .search-bar input {
-background-color: black;
-color: white;
-flex-grow: 1;
-height: 30px;
-margin-right: 18px;
-font-size: 16px;
-text-transform: uppercase;
-border: none;
+  background-color: black;
+  color: white;
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .search-bar .mic_svg {
-height: 20px;
-margin-right: 15px;
+  height: 20px;
+  margin-right: 15px;
 }
 
 .search-bar input:focus {
-outline: none;
+  outline: none;
 }
 
 .search-button {
-margin-top: 20px;
-text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .search-button button {
-background-color: black;
-color: white;
-border: 0px;
-font-size: 20px;
-height: 50px;
-width: 100px;
-text-align: center;
-cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 0px;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .search-button button:hover {
-border: 0px;
-background-color: black;
-font-weight: 900;
-font-size: 24px;
+  border: 0px;
+  background-color: black;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 /* Basic styling for buttons */
 .select-button button {
-background-color: transparent;
-border: 1px;
-color:rgb(138, 138, 138);
-font-family: arial, sans-serif;
-font-size: 19px;
-margin: 5px 5px 5px 5px;
-margin-top: 30px;
-margin-left: 10px;
-width: 80px;
-text-align: center;
-cursor: pointer;
+  background-color: transparent;
+  border: 1px;
+  color: rgb(138, 138, 138);
+  font-family: arial, sans-serif;
+  font-size: 19px;
+  margin: 5px 5px 5px 5px;
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* Styling for the selected button */
 .select-button button.selected {
-background-color: transparent;
-color: var(--red);
+  background-color: transparent;
+  color: var(--red);
 
-.google-search-btn {
-  width: 120px;
-}
+  .google-search-btn {
+    width: 120px;
+  }
 
-.lucky-search-btn {
-  width: 140px;
-}
+  .lucky-search-btn {
+    width: 140px;
+  }
 
-.languages {
-  margin-top: 20px;
-  font-size: 14px;
-}
+  .languages {
+    margin-top: 20px;
+    font-size: 14px;
+  }
 
-.languages a {
-  color: #1a0dab;
-  padding: 0 3px;
-}
+  .languages a {
+    color: #1a0dab;
+    padding: 0 3px;
+  }
 
-.languages a:hover {
-  text-decoration: underline !important;
-}
+  .languages a:hover {
+    text-decoration: underline !important;
+  }
 
-.circle-shadow {
-height: 20px;
-width: 20px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+  .circle-shadow {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.wave img {
-position: absolute;
-max-width: 100%;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1;
-}
+  .wave img {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
 
-.circle-shadow:hover {
-background-color: var(--red);
-}
+  .circle-shadow:hover {
+    background-color: var(--red);
+  }
 
-.circle-shadow svg {
-fill: #5f6368;
-height: 20px;
-}
+  .circle-shadow svg {
+    fill: #5f6368;
+    height: 20px;
+  }
 
-#github {
-padding-top: 1em;
-margin-top: 1em;
-max-width: 80%;
-max-height: 80%;
-}
+  #github {
+    padding-top: 1em;
+    margin-top: 1em;
+    max-width: 80%;
+    max-height: 80%;
+  }
 
-#github-footer {
-position: fixed;  /* Fixed position relative to the viewport */
-right: 20px;      /* Distance from the right edge of the viewport */
-bottom: 0px;     /* Distance from the bottom edge of the viewport */
-width: 50px;      /* Optional: Adjust the width as necessary */
-height: auto;     /* Maintains the aspect ratio of the SVG */
-align-items: start;
-justify-self: start;
-align-items: self-start;
+  #github-footer {
+    position: fixed;
+    /* Fixed position relative to the viewport */
+    right: 20px;
+    /* Distance from the right edge of the viewport */
+    bottom: 0px;
+    /* Distance from the bottom edge of the viewport */
+    width: 50px;
+    /* Optional: Adjust the width as necessary */
+    height: auto;
+    /* Maintains the aspect ratio of the SVG */
+    align-items: start;
+    justify-self: start;
+    align-items: self-start;
 
-max-width: 120%;
-max-height: 120%;
-}
+    max-width: 120%;
+    max-height: 120%;
+  }
 
-/* Styling for the selected button */
-.select-button button.selected {
-background-color: transparent;
-color: var(--red);
+  /* Styling for the selected button */
+  .select-button button.selected {
+    background-color: transparent;
+    color: var(--red);
 
-.google-search-btn {
-  width: 120px;
-}
+    .google-search-btn {
+      width: 120px;
+    }
 
-.lucky-search-btn {
-  width: 140px;
-}
+    .lucky-search-btn {
+      width: 140px;
+    }
 
-.languages {
-  margin-top: 20px;
-  font-size: 14px;
-}
+    .languages {
+      margin-top: 20px;
+      font-size: 14px;
+    }
 
-.languages a {
-  color: #1a0dab;
-  padding: 0 3px;
-}
+    .languages a {
+      color: #1a0dab;
+      padding: 0 3px;
+    }
 
-.languages a:hover {
-  text-decoration: underline !important;
-}
-}
+    .languages a:hover {
+      text-decoration: underline !important;
+    }
+  }
 }
 
 .navbar {
@@ -318,7 +324,8 @@ color: var(--red);
 
 .menu-left {
   display: flex;
-  gap: 20px; /* Space between #menu-osint and #menu */
+  gap: 20px;
+  /* Space between #menu-osint and #menu */
 }
 
 #menu-right {
@@ -334,12 +341,14 @@ color: var(--red);
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px; /* Space between individual list items */
+  gap: 10px;
+  /* Space between individual list items */
 }
 
 .navbar ul li {
   margin: 0 10px;
-  position: relative; /* Make li the reference for absolute positioning */
+  position: relative;
+  /* Make li the reference for absolute positioning */
 }
 
 .navbar ul li a {
@@ -368,7 +377,7 @@ color: var(--red);
 }
 
 /* Show first-level submenu on hover */
-.navbar ul li:hover > ul {
+.navbar ul li:hover>ul {
   display: block;
 }
 
@@ -391,13 +400,14 @@ color: var(--red);
   display: none;
   position: absolute;
   top: 0;
-  left: 100%; /* Positions the second-level submenu to the right of the parent */
+  left: 100%;
+  /* Positions the second-level submenu to the right of the parent */
   background-color: black;
   z-index: 2;
 }
 
 /* Show second-level submenu on hover */
-.navbar ul li ul li:hover > ul {
+.navbar ul li ul li:hover>ul {
   display: block;
 }
 
@@ -424,4 +434,15 @@ color: var(--red);
   content: "";
   clear: both;
   display: table;
+}
+
+#footer {
+  position: fixed;
+  color: #555;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  border-radius: 5px;
 }
