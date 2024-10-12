@@ -92,10 +92,10 @@ if changes_outside_excluded_dirs():
     # Prepare the log entry if author is not github-actions[bot]
     if author_name != 'github-actions[bot]':
         new_log_entry = [
-            f"Update:  {commit_message} ({type})\n",
+            f"Update:  {commit_message} ({type} patch)\n",
             f"Commit:  {commit_hash}\n",
             f"Author:  {author_name} on {formatted_date}\n",
-            f"Version:  {major}.{minor}.{patch}-{date_version}\n",
+            f"Version: {major}.{minor}.{patch}-{date_version}\n",
             "\n"
         ]
 
