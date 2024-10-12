@@ -87,11 +87,13 @@ if changes_outside_excluded_dirs():
     # Convert commit date to desired format
     commit_datetime = datetime.strptime(commit_date, '%a %b %d %H:%M:%S %Y %z')
     formatted_date = commit_datetime.strftime('%B %d, %Y, at %H:%M (UTC%z)')
+    date_version = commit_datetime.strftime('%d.%m.%y')
 
     # Prepare the log entry if author is not github-actions[bot]
     if author_name != 'github-actions[bot]':
         new_log_entry = [
-            f"Update: {major}.{minor}.{patch} {type} update: {commit_message}\n",
+            f"Update: {commit_message}\n",
+            f"Version: {type} {major}.{minor}.{patch}-{date_version}\n",
             f"Commit: {commit_hash}\n",
             f"Author: {author_name} on {formatted_date}\n",
             "\n"
