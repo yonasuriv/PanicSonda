@@ -256,32 +256,6 @@ body {
     height: 20px;
   }
 
-  #github {
-    padding-top: 1em;
-    margin-top: 1em;
-    max-width: 80%;
-    max-height: 80%;
-  }
-
-  #github-footer {
-    position: fixed;
-    /* Fixed position relative to the viewport */
-    right: 20px;
-    /* Distance from the right edge of the viewport */
-    bottom: 0px;
-    /* Distance from the bottom edge of the viewport */
-    width: 50px;
-    /* Optional: Adjust the width as necessary */
-    height: auto;
-    /* Maintains the aspect ratio of the SVG */
-    align-items: start;
-    justify-self: start;
-    align-items: self-start;
-
-    max-width: 120%;
-    max-height: 120%;
-  }
-
   /* Styling for the selected button */
   .select-button button.selected {
     background-color: transparent;
@@ -311,29 +285,63 @@ body {
   }
 }
 
+/* First level submenu */
 .navbar {
-  background-color: #000000;
-  padding: 10px;
-  margin-top: 10px;
+  background-color: #000;
+  margin-top: 1em;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.menu-left {
+.menu-left,
+.menu-center,
+#menu-right {
   display: flex;
-  gap: 20px;
-  /* Space between #menu-osint and #menu */
+  align-items: center;
 }
 
+.menu-center select {
+  padding: 5px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Ensure the right menu stays at the far right */
 #menu-right {
-  position: fixed;
-  justify-content: flex-start;
-  align-items: center;
   right: 20px;
-  top: 20px;
+  position: absolute;
+}
+
+#github {
+  max-width: 90%;
+  max-height: 90%;
+  position: flex;
+  right: 20px;
+  /* Correct: Distance from the right edge */
+  bottom: 0px;
+  /* Correct: Distance from the bottom */
+  width: 50px;
+  height: auto;
+  /* Keeps aspect ratio */
+}
+
+/* Fix for urlSelect styling */
+#urlSelect {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em;
+  color: rgba(255, 0, 0, 0.557);
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-right: 10px;
+  z-index: 1000; /* Ensure dropdown appears on top of other elements */
+  position: relative;
 }
 
 .navbar ul {
@@ -376,15 +384,39 @@ body {
   z-index: 1;
 }
 
+/* Styling for first-level submenu items */
+.navbar ul li ul li a {
+  color: white; /* Change the text color to white for better contrast */
+  font-size: 16px; /* Increase font size for better readability */
+  background-color: #333; /* Match the background color with the navbar */
+  padding: 10px 15px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+  text-transform: none; /* Remove uppercase for submenu items */
+}
+
 /* Show first-level submenu on hover */
 .navbar ul li:hover>ul {
   display: block;
 }
 
+
+/* Adjust the Resources dropdown to stay aligned */
+.navbar ul li ul {
+  min-width: 160px; /* Ensures the dropdown menu has enough width */
+  left: 0; /* Aligns the dropdown under the Resources link */
+  top: 100%; /* Positions it below the Resources item */
+}
+
+/* Hover effect for submenu items */
+.navbar ul li ul li a:hover {
+  background-color: var(--red); /* Use your theme's hover color */
+  color: white; /* Keep text white on hover */
+}
+
 /* Styling for first-level submenu items */
 .navbar ul li ul li a {
   color: black;
-  font-size: 12px;
+  font-size: 16px;
   background-color: lightgray;
   text-align: left;
   border-radius: 2px;
@@ -417,10 +449,13 @@ body {
 }
 
 .navbar ul li ul li ul li a {
-  font-size: 12px;
+  font-size: 14px;
   background-color: #333;
   color: white;
   padding: 10px;
+  min-width: 160px; /* Ensures the dropdown menu has enough width */
+  left: 0; /* Aligns the dropdown under the Resources link */
+  top: 100%; /* Positions it below the Resources item */
 }
 
 /* Styling for hover in the second-level submenu */
