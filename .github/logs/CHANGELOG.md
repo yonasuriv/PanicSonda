@@ -4,7 +4,7 @@
 # Update the below variable to process your changes and reflect the version accordingly
 # For more info read CONTRIBUTING.md
 
-TYPE=MInor
+TYPE=Ninja
 -->
 
 # What's new
