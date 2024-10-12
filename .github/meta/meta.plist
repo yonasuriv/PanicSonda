@@ -1,0 +1,8 @@
+GITHUB_USER="yonasuriv"
+GITHUB_REPO="panicsonda"
+GITHUB_BRANCH="main"
+GITHUB_DOMAIN="https://github.com"
+GITHUB_VERSION_PATH=".github/version/current"
+GITHUB_URL="${GITHUB_DOMAIN}/${GITHUB_USER}/${GITHUB_REPO}"
+
+VERSION_GITHUB="https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${GITHUB_VERSION_PATH}"
