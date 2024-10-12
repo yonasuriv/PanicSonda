@@ -1,5 +1,10 @@
 # Displaying all the ninjas updates in descending order from newest to oldest
 
+Update:  Updated versioning (Ninja patch)
+Commit:  ac0ccff574e31f62658478267cdc712ad00819f8
+Author:  Jonathan Di Rico on October 12, 2024, at 14:55 (UTC-0400)
+Version: 1.8.1-12.10.24
+
 Update:  Updated versioning (Ninja)
 Commit:  7755182c82a8659cd21396f4ed56b722b3319381
 Author:  Jonathan Di Rico on October 12, 2024, at 14:54 (UTC-0400)
