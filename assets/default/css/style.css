@@ -1,0 +1,306 @@
+:root {
+  --red: #ff1616;
+  --pink: #e60073;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden; /* Prevents scrollbars */
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo img{
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.logo-header h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.logo-header p {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin: 40px 0px 50px 25px;
+}
+
+.search-container {
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.search-bar {
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid var(--red);
+  border-radius: 25px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+
+.search-input::placeholder {
+  color: #ddd;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--red);
+}
+
+.nav-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+}
+
+.search-bar {
+border: 2px solid var(--red);
+background-color: black;
+width: 830px;
+height: 65px;
+border-radius: 30px;
+display: flex;
+align-items: center;
+padding-left: 15px;
+margin-top: 20px;
+}
+
+.search-bar:hover {
+background-color: black;
+box-shadow: 3px 3px 30px var(--red);
+border-color: var(--red);
+}
+
+.search-bar i {
+font-size: 15px;
+color: var(--red);
+margin-right: 15px;
+}
+
+.search-bar input {
+background-color: black;
+color: white;
+flex-grow: 1;
+height: 30px;
+margin-right: 18px;
+font-size: 16px;
+text-transform: uppercase;
+border: none;
+}
+
+.search-bar .mic_svg {
+height: 20px;
+margin-right: 15px;
+}
+
+.search-bar input:focus {
+outline: none;
+}
+
+.search-button {
+margin-top: 20px;
+text-align: center;
+}
+
+.search-button button {
+background-color: black;
+color: white;
+border: 0px;
+font-size: 20px;
+height: 50px;
+width: 100px;
+text-align: center;
+cursor: pointer;
+}
+
+.search-button button:hover {
+border: 0px;
+background-color: black;
+font-weight: 900;
+font-size: 24px;
+}
+
+/* Basic styling for buttons */
+.select-button button {
+background-color: transparent;
+border: 1px;
+color:rgb(138, 138, 138);
+font-family: arial, sans-serif;
+font-size: 19px;
+margin: 5px 5px 5px 5px;
+margin-top: 30px;
+margin-left: 10px;
+width: 80px;
+text-align: center;
+cursor: pointer;
+}
+
+/* Styling for the selected button */
+.select-button button.selected {
+background-color: transparent;
+color: var(--red);
+
+.google-search-btn {
+  width: 120px;
+}
+
+.lucky-search-btn {
+  width: 140px;
+}
+
+.languages {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.languages a {
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+.languages a:hover {
+  text-decoration: underline !important;
+}
+
+.circle-shadow {
+height: 20px;
+width: 20px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.wave img {
+position: absolute;
+max-width: 100%;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+.circle-shadow:hover {
+background-color: var(--red);
+}
+
+.circle-shadow svg {
+fill: #5f6368;
+height: 20px;
+}
+
+#github {
+padding-top: 1em;
+margin-top: 1em;
+max-width: 80%;
+max-height: 80%;
+}
+
+#github-footer {
+position: fixed;  /* Fixed position relative to the viewport */
+right: 20px;      /* Distance from the right edge of the viewport */
+bottom: 0px;     /* Distance from the bottom edge of the viewport */
+width: 50px;      /* Optional: Adjust the width as necessary */
+height: auto;     /* Maintains the aspect ratio of the SVG */
+align-items: start;
+justify-self: start;
+align-items: self-start;
+
+max-width: 120%;
+max-height: 120%;
+}
+
+/* Styling for the selected button */
+.select-button button.selected {
+background-color: transparent;
+color: var(--red);
+
+.google-search-btn {
+  width: 120px;
+}
+
+.lucky-search-btn {
+  width: 140px;
+}
+
+.languages {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.languages a {
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+.languages a:hover {
+  text-decoration: underline !important;
+}
+}
+}
