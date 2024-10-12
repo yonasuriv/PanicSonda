@@ -13,5 +13,3 @@
 
 This project is currently in its beta stage and is under active development. \
 It aims to provide a unique and powerful search engine experience, with features that are still being tested and refined.
-
-Please note that this release is unofficial, and while the core functionality is in place, further improvements and optimizations are ongoing.
