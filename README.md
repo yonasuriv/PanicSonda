@@ -23,7 +23,7 @@ All contributions for improving or extending the tool are welcome, just:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-![image](https://github.com/user-attachments/assets/c443d027-bbcd-4260-8b54-5f7d518d527c)
+![image](https://github.com/user-attachments/assets/8cdea25e-445a-4147-8542-8548b8fac5cc)
 
 > This project is currently in its alpha stage and is under active development.
 > 
