@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/default/css/style.css">
     <link rel="stylesheet" href="assets/default/css/osint-navbar.css">
     <link rel="icon" href="assets/default/icons/favicon.png">
-    
+    <script src="assets/default/js/user-select.js"></script>
     <script src="assets/default/js/search-focus.js"></script>
     <script src="assets/default/js/search-remember.js"></script>
     <script src="assets/default/js/osint-navbar.js"></script>
@@ -18,21 +18,40 @@
     <div class="navbar">
         <div class="menu-left">
             <ul id="menu-osint"></ul>
-            
         </div>
         
         <div class="menu-center">
             <ul id="menu">
-                <li><a href="https://gchq.github.io/CyberChef/">Cyber Chef</a></li>
-                <li><a href="https://www.revshells.com/">Rev Shells</a></li>
-                <li><a href="https://pentestbook.six2dez.com/">Pentest Book</a></li>
-                <li><a href="https://www.exploit-db.com/">Exploit Database</a></li>
-                <li><a href="https://security.snyk.io/">Vulnerability Database</a></li>
+                
                 <li>
-                    <a href="#">Resources</a>
-                    <ul id="resources">
+                    <a href="#">General Tools</a>
+                    <ul id="general-tools">
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Pentesting Tools</a>
+                    <ul id="pentesting-tools">
+                        <li><a href="https://gchq.github.io/CyberChef/">Cyber Chef</a></li>
+                        <li><a href="https://www.revshells.com/">Rev Shells</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Pentesting Resources</a>
+                    <ul id="pentesting-resources">
                         <li><a href="https://book.hacktricks.xyz/">Hack Tricks</a></li>
                         <li><a href="https://swisskyrepo.github.io/InternalAllTheThings/">All the things</a></li>
+                        <li><a href="https://pentestbook.six2dez.com/">Pentest Book</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Databases</a>
+                    <ul id="databases">
+                        <li><a href="https://www.exploit-db.com/">Exploit Database</a></li>
+                        <li><a href="https://security.snyk.io/">Vulnerability Database</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,12 +59,12 @@
         
         <div id="menu-right">
             <select id="urlSelect">
-                <option value="https://www.startpage.com/do/search">Default Engine</option>
-                <option value="https://search.brave.com/images?q=">Brave</option>
-                <option value="https://duckduckgo.com/?t=h_&q=">DuckDuckGo</option>
-                <option value="https://www.google.com/search?q=">Google</option>
+                <option value="default">Default Engine</option>
+                <option value="brave">Brave</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="google">Google</option>
             </select>
-            <p>  </p>
+
             <a href="https://github.com/yonasuriv/panicsonda" target="_blank">
                 <img id="github" src="assets/default/icons/github-48-red.png" alt="GitHub">
             </a>
@@ -62,7 +81,7 @@
         </div>
 
         <div class="search-container">
-            <form id="myForm" action="https://www.startpage.com/do/search" method="get" autocomplete="off">
+            <form id="myForm" action="" method="get" autocomplete="off">
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
                     <input id="search-input" class="search-input" type="text" name="query">
@@ -73,6 +92,7 @@
                 </div>
             </form>
         </div>
+
     </div>
 </body>
 <footer>

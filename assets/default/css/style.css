@@ -399,7 +399,6 @@ body {
   display: block;
 }
 
-
 /* Adjust the Resources dropdown to stay aligned */
 .navbar ul li ul {
   min-width: 160px; /* Ensures the dropdown menu has enough width */
@@ -475,9 +474,9 @@ body {
   position: fixed;
   color: #555;
   bottom: 0;
-  right: 0;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 5px;
+  right: 25px;
+  margin-bottom: 20px;
   font-size: 14px;
   border-radius: 5px;
 }

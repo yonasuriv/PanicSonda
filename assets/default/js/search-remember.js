@@ -1,16 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
+    // Define the search engine URLs with placeholders for the query
+    const searchEngines = {
+        default: 'https://www.startpage.com/do/search?query=${userinput}',
+        brave: 'https://search.brave.com/search?q=${userinput}&source=web',
+        duckduckgo: 'https://duckduckgo.com/?t=h_&q=${userinput}',
+        google: 'https://www.google.com/search?q=${userinput}'
+    };
 
-    const urlSelect = document.getElementById('urlSelect');
+    // Reference to the form, select, and input elements
     const form = document.getElementById('myForm');
+    const urlSelect = document.getElementById('urlSelect');
+    const searchInput = document.getElementById('search-input');
 
-    // Ensure that changing the select option only updates the action, without focusing elsewhere
-    urlSelect.addEventListener('mousedown', function (e) {
-        e.stopPropagation(); // Stop propagation to avoid any bubbling issues
-    });
+    // Update the form action before submission based on user input and selected engine
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();  // Prevent the form from submitting immediately
 
-    // Update form action based on the selection when the user submits
-    form.addEventListener('submit', function (e) {
-        const selectedUrl = urlSelect.value;
-        form.action = selectedUrl;
+        const selectedEngine = urlSelect.value;  // Get the selected search engine
+        const userinput = encodeURIComponent(searchInput.value);  // Get user input and URL-encode it
+
+        // Set the form action with the user input inserted into the URL
+        const searchUrl = searchEngines[selectedEngine].replace('${userinput}', userinput);
+        window.location.href = searchUrl;  // Redirect to the constructed URL
     });
 });
